@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <style>
+        label {
+            width: 200px;
+            display: inline-block;
+        }
+
+        #apptype {
+            width: 500px;
+        }
+
+        #checkups {
+            margin-left: 200px;
+        }
+
+        #bt-snd {
+            margin-left: 200px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        hr {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+        <h1>Doctor Appointment Form</h1>
+        <hr> <br>
+        <form>
+            <label>Appointment Date</label>
+            <input type="date"> <br> <br>
+            <label>Appointment Time</label>
+            <input type="time"> <br> <br>
+            <label>Name</label>
+            <input type="text" value="First"> <input type="text" value="Last"> <br> <br>
+            <label>Gender</label>
+            Male <input type="radio"> Female<input type="radio"> <br> <br>
+            <label>Phone</label>
+            <input type="text" value="####"> <br> <br>
+            <label>Address</label>
+            <input type="text" value="city"> <input type="text" value="state"> <br> <br>
+            <label>Your Query</label>
+            <textarea cols="30" rows="5"></textarea> <br> <br>
+            <label>Appointment Type</label>
+            <label id="apptype">Select which Appointment type(s) you require</label> <br> <br>
+            <div id="checkups">
+                <input type="checkbox"> Cervex checkup <br>
+                <input type="checkbox"> Heart Checkup <br>
+                <input type="checkbox"> Eye Check-up <br>
+                <input type="checkbox"> Hearing Test <br> <br>
+            </div>
+            <button id="bt-snd">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
