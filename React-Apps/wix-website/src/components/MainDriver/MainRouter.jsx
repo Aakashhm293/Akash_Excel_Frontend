@@ -42,7 +42,7 @@ function MainRouter() {
       ),
     },
     {
-      path: "/client-albums",
+      path: "/clientalbums",
       element: (
         <>
           <ClientAlbums />

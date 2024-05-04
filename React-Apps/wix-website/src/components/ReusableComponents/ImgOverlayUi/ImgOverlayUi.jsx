@@ -1,10 +1,17 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./ImgOverlayUi.css";
+import { motion } from "framer-motion";
 
 function ImgOverlayUi() {
   return (
-    <div className="col-12 text-center justify-content-center mx-auto">
+    <motion.div
+      className="col-12 text-center justify-content-center mx-auto"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+    >
       <Card id="imagecard" className="bg-dark text-white">
         <Card.Img
           src="https://static.wixstatic.com/media/f61af8_97a68d95c3584eee8952b7b3184f5f80~mv2_d_6924_3840_s_4_2.jpg/v1/fill/w_1960,h_1800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/f61af8_97a68d95c3584eee8952b7b3184f5f80~mv2_d_6924_3840_s_4_2.jpg"
@@ -20,7 +27,7 @@ function ImgOverlayUi() {
           </Button>
         </Card.ImgOverlay>
       </Card>
-    </div>
+    </motion.div>
   );
 }
 
